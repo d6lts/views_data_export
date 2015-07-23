@@ -125,7 +125,7 @@ class views_data_export_plugin_display_export extends views_plugin_display_feed 
   /**
    * Save the options from the options form.
    */
-  function options_submit(&$form, &$form_state) {
+  function options_submit($form, &$form_state) {
     // It is very important to call the parent function here:
     parent::options_submit($form, $form_state);
     switch ($form_state['section']) {
@@ -390,7 +390,7 @@ class views_data_export_plugin_display_export extends views_plugin_display_feed 
    * getting the results and making the view think it has already executed the
    * query.
    */
-  function query() {
+  function query($group_by = FALSE) {
 
     if (!$this->is_batched()) {
       return parent::query();
