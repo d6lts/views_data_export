@@ -168,6 +168,9 @@ class views_data_export_plugin_style_export extends views_plugin_style {
     if ($this->options['parent_sort']) {
       $query['attach'] = $display_id;
     }
+    if (!isset($this->view->feed_icon)) {
+      $this->view->feed_icon = '';
+    }
     $this->view->feed_icon .= theme($theme_pattern,
       $this->definition['export feed icon'],
       $this->view->get_url(NULL, $path),
