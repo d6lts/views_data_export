@@ -3,9 +3,3 @@ description = "Plugin to export views data into various file formats"
 dependencies[] = views
 package = Views
 core = 6.x
-
-; Information added by Drupal 6 LTS vendors on 2016-10-05
-version = "6.x-2.0-beta8"
-core = "6.x"
-project = "views_data_export"
-datestamp = "1475686624"
