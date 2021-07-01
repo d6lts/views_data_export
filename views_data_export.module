@@ -57,7 +57,7 @@ function views_data_export_file_download($filepath) {
  *   TRUE if the filepath identifies an export file, FALSE otherwise.
  */
 function views_data_export_is_export_file($filepath) {
-  return strpos($filepath, file_directory_temp() . '/views_plugin_display') === 0;
+  return strpos($filepath, realpath(file_directory_temp()) . '/views_plugin_display') === 0;
 }
 
 /**
