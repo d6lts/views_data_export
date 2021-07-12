@@ -4,8 +4,3 @@ core = 6.x
 
 dependencies[] = views_data_export
 dependencies[] = views_bonus_export
-; Information added by Drupal 6 LTS vendors on 2021-07-12
-version = "6.x-3.0-beta7"
-core = "6.x"
-project = "views_data_export"
-datestamp = "1626118724"
